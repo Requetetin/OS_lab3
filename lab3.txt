@@ -1,0 +1,26 @@
+1. Una race condition es cuando dos procesos van a utilizar los mismos recursos, pero no los utilizan en el orden debido.
+  Pueden causar bugs en programas, y en un sistema operativo causar valores de memoria incorrectos.
+
+2. clone() tiene la capacidad de crear procesos y multithreading. Esta es la mayor diferencia, que pthread unicamente aplica para multithreading.
+  clone() a tienen un comportamiento similar al de fork(), por lo que se sugiere el uso de pthread.
+
+3. La paralelizacion de tareas se hace al realizar la funcion de chequeo de columnas.
+  Luego en cada funcion, el chequeo de si es invalida es paralelizacion de datos.
+
+4. Hay 8 abiertos en la revision de columnas y 4 en el main. 
+  8 y 4 respectivamente, pues estan mapeados 1 a 1.
+
+5. 5 en la revision de columnas y 1 en el main.
+  4 threads es el default numero de threads.
+
+6. 1539 al 1544. La primera columna muestra si fue o no ejecutado. El no ejecutado fue el primero, pues es el inicial (master thread).
+
+7. Un thread team son los hilos que estan paralelizando el proceso. El master thread es el que creo el trabajo paralelo.
+  Proceso que espera el cumplimiento de una condicion de manera repetida.
+  El thread pool reutiliza los threads que han sido inicializados y han sido puestos en 'sleep'
+
+8. El maximo fue 5. OpenMP por defecto divide el trabajo de manera que los hilos liberados empiezan a trabajar al momento que se liberan.
+
+9. Hay mas concurrencias en el programa. Esto es mas eficiente, pues cada ciclo del proceso se realiza de manera paralela.
+
+10. Se aumentan la cantidad de hilos, pues los ciclos anidados realizan mas hilos por el hecho de la anidacion
